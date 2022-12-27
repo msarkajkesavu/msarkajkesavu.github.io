@@ -1,7 +1,9 @@
+/*The back of the website*/
 body{
     height: 1000px;
     background: #1B1A17;
 }
+/*Top Right corner words*/
 .p1
 {
     color: #E45826;
@@ -9,13 +11,24 @@ body{
     position: static;
     font-size: large;
     font-family: 'Courier New', Courier, monospace;
+    /*Fade in Animation*/
+    animation-name: Fadein;
+    animation-duration: 5s;
 }
+/*Keyframes for animation*/
+@keyframes Fadein 
+{
+    0%{color: #1B1A17;}
+    25%{color: #E45826;}
+}
+/*Boarder of the website*/
 *
 {
     margin: 5px;
     padding: 5px;
     box-sizing: border-box;
 }
+/*Profile pic*/
 .DP
 {
     width: 100%;
@@ -24,6 +37,7 @@ body{
     justify-content: left;
     align-items: top;
 }
+/*Rounding the square profile pic*/
 .DP img
 {
     height: 300px;
@@ -31,4 +45,13 @@ body{
     display: flex;
     border-radius: 100%;
     border: 5px solid #1B1A17;
+    animation-name: ImgFadein;
+    animation-duration: 5s;
+}
+/*Profile ImgFadein*/
+@keyframes ImgFadein
+{
+    0%{opacity: 0%;}
+    50%{opacity: 50%;}
+    100%{opacity: 100%;}
 }
