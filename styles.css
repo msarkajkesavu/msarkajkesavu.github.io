@@ -1,20 +1,24 @@
 /*The back of the website*/
 body{
     height: 1000px;
-    background: #1B1A17;
+    background: #373A40;
 }
 /*Top Right corner words*/
-.p1
-{
-    color: #E45826;
-    text-shadow: #F0A500 1px 0 10px;
+  
+  .glow-text {
+    color: #DC5F00;
+    text-shadow: #686D76 1px 0 10px;
     position: static;
     font-size: large;
     font-family: 'Courier New', Courier, monospace;
-    /*Fade in Animation*/
     animation-name: Fadein;
     animation-duration: 5s;
-}
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+  }
+  
+  .glow-text:hover {
+    text-shadow: #EEEEEE 1px 0 20px;
+  }
 /*Keyframes for animation*/
 @keyframes Fadein 
 {
@@ -36,6 +40,7 @@ body{
     display: flex;
     justify-content: left;
     align-items: top;
+    
 }
 /*Rounding the square profile pic*/
 .DP img
@@ -44,9 +49,10 @@ body{
     width: 200px;
     display: flex;
     border-radius: 100%;
-    border: 5px solid #1B1A17;
     animation-name: ImgFadein;
     animation-duration: 5s;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*Profile ImgFadein*/
 @keyframes ImgFadein
